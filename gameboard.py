@@ -37,3 +37,4 @@ class GameBoard:
         if playerRow == self.winningRow and playerColumn == self.winningColumn:
             return True
         else: return False
+        # checks position of player, if it is at the "exit" of the maze.

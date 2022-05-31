@@ -24,7 +24,8 @@ while True:
     # Move the player through the board
     if selection =="w": 
         player.moveUp()
-        board.checkMove(player.rowPosition, player.columnPosition)
+        board.checkMove(player.rowPosition, player.columnPosition) 
+        # checkMove needs to check row and column position in order to move forward
     elif selection =="s":
         player.moveDown()
         board.checkMove(player.rowPosition, player.columnPosition)
@@ -40,3 +41,4 @@ while True:
     if board.checkWin(player.rowPosition, player.columnPosition):
         print ("Congratulations! You've won the game!!")
         break
+    # broke the loop if the winning condition was met
